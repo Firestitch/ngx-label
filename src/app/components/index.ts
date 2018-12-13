@@ -1,1 +1,2 @@
-export * from './fs-component';
+export * from './fs-label';
+export * from './fs-label-field';

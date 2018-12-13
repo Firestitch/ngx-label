@@ -1,0 +1,11 @@
+.field-content {
+  padding-top: 0.4375em;
+}
+
+.field-label {
+  height: 12px;
+}
+
+:host ::ng-deep fs-label {
+  white-space: nowrap;
+}

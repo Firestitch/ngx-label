@@ -1,0 +1,8 @@
+:host {
+  transform: scale(0.75) perspective(100px) translateZ(0.001px);
+  transform-origin: 0 0;
+  transition: none;
+  display: flex;
+  width: 133.333333333%;
+  color: rgba(0, 0, 0, 0.54);
+}
