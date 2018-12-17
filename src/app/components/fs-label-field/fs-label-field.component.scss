@@ -6,6 +6,11 @@
   height: 12px;
 }
 
+fs-label-field {
+  display: inline-block;
+  min-height: 61px;
+}
+
 :host ::ng-deep fs-label {
   white-space: nowrap;
 }
