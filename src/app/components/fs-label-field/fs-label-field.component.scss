@@ -9,7 +9,8 @@
 :host {
 
   display: inline-block;
-  min-height: 61px;
+  min-height: 41px;
+  margin-bottom: 1.25em;
 
   ::ng-deep fs-label {
     white-space: nowrap;
