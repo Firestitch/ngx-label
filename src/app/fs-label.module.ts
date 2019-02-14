@@ -1,8 +1,9 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FsLabelComponent } from './components/fs-label/fs-label.component';
-import { FsLabelFieldComponent } from './components/fs-label-field/fs-label-field.component';
+import { FsLabelComponent } from './components/label/label.component';
+import { FsLabelFieldComponent } from './components/label-field/label-field.component';
+
 
 @NgModule({
   imports: [
@@ -10,7 +11,7 @@ import { FsLabelFieldComponent } from './components/fs-label-field/fs-label-fiel
   ],
   exports: [
     FsLabelComponent,
-    FsLabelFieldComponent
+    FsLabelFieldComponent,
   ],
   entryComponents: [
   ],
@@ -20,9 +21,9 @@ import { FsLabelFieldComponent } from './components/fs-label-field/fs-label-fiel
   ]
 })
 export class FsLabelModule {
-  static forRoot(): ModuleWithProviders {
+  /*static forRoot(): ModuleWithProviders {
     return {
       ngModule: FsLabelModule
     };
-  }
+  }*/
 }

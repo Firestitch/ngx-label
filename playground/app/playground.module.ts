@@ -6,15 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FsExampleModule } from '@firestitch/example';
 import { FsMessageModule } from '@firestitch/message';
+import { FsLabelModule } from '@firestitch/label';
 
 import { ToastrModule } from 'ngx-toastr';
 
-import { FsLabelModule } from 'fs-package';
-
 import { AppMaterialModule } from './material.module';
-import {
-ExampleComponent,
-ExamplesComponent } from './components';
+import { ExampleComponent, ExamplesComponent } from './components';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
@@ -22,7 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  bootstrap: [ AppComponent ],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
     FsLabelModule,
@@ -34,15 +31,13 @@ const routes: Routes = [
     ToastrModule.forRoot({ preventDuplicates: true }),
     RouterModule.forRoot(routes),
   ],
-  entryComponents: [
-  ],
+  entryComponents: [],
   declarations: [
     AppComponent,
     ExamplesComponent,
     ExampleComponent
   ],
-  providers: [
-  ],
+  providers: [],
 })
 export class PlaygroundModule {
 }

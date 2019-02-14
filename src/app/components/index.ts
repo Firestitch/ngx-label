@@ -1,2 +1,2 @@
-export * from './fs-label';
-export * from './fs-label-field';
+export * from './label';
+export * from './label-field';
