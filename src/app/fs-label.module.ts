@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FsLabelComponent } from './components/label/label.component';
 import { FsLabelFieldComponent } from './components/label-field/label-field.component';
+import { FsLabelMessageComponent } from './components/label-message/label-message.component';
 
 
 @NgModule({
@@ -12,18 +13,14 @@ import { FsLabelFieldComponent } from './components/label-field/label-field.comp
   exports: [
     FsLabelComponent,
     FsLabelFieldComponent,
+    FsLabelMessageComponent
   ],
   entryComponents: [
   ],
   declarations: [
     FsLabelComponent,
-    FsLabelFieldComponent
+    FsLabelFieldComponent,
+    FsLabelMessageComponent
   ]
 })
-export class FsLabelModule {
-  /*static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: FsLabelModule
-    };
-  }*/
-}
+export class FsLabelModule {}

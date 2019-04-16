@@ -11,8 +11,15 @@
   display: inline-block;
   min-height: 41px;
   margin-bottom: 1.25em;
+  position: relative;
 
   ::ng-deep fs-label {
     white-space: nowrap;
   }
+}
+
+.field-message {
+  position: absolute;
+  font-size: 75%;
+  bottom: -1.4em;
 }
