@@ -1,11 +1,3 @@
-.field-content {
-  padding-top: 0.4375em;
-}
-
-.field-label {
-  height: 12px;
-}
-
 :host {
 
   display: inline-block;
@@ -14,6 +6,7 @@
   position: relative;
 
   ::ng-deep fs-label {
+    height: 12px;
     white-space: nowrap;
   }
 }
