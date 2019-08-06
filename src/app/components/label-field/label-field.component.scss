@@ -1,13 +1,15 @@
 :host {
 
-  display: inline-block;
+  display: block;
   min-height: 41px;
   margin-bottom: 1.25em;
   position: relative;
 
   ::ng-deep fs-label {
-    height: 12px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
 }
 
