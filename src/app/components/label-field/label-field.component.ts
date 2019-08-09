@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'fs-label-field',
@@ -6,6 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: [ 'label-field.component.scss' ],
 })
 export class FsLabelFieldComponent {
+
+  @Input('bottomMargin') set setBottomMargin(value) {
+    this.bottomMargin = value;
+  }
+
+  @HostBinding('class.field-bottom-margin')
+  public bottomMargin = true;
 
   constructor() {
   }

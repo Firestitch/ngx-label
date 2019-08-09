@@ -2,8 +2,11 @@
 
   display: block;
   min-height: 41px;
-  margin-bottom: 1.25em;
   position: relative;
+
+  &.field-bottom-margin {
+    margin-bottom: 1.25em;
+  }
 
   ::ng-deep fs-label {
     white-space: nowrap;
@@ -14,7 +17,7 @@
 }
 
 .field-message {
-  position: absolute;
   font-size: 75%;
-  bottom: -1.4em;
+  margin-top: 3px;
+  color: rgba(0, 0, 0, 0.54);
 }
