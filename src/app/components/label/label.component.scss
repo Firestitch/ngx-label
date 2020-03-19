@@ -1,10 +1,9 @@
 :host {
-  transform: scaleX(1.0) scaleY(1.03) translateZ(0) perspective(1px);
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   transition: none;
   display: flex;
   color: rgba(0,0,0,.54);
-  font-size: .75em;
-  padding-bottom: 0.4375em;
+  line-height: 16.875px;
+  transform: scale(0.75)  perspective(1em)  translateZ(0.00106px);
 }
