@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
+import { FsLabelComponent } from './../label/label.component';
+import { ChangeDetectionStrategy, Component, HostBinding, Input, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'fs-label-field',
@@ -12,8 +13,15 @@ export class FsLabelFieldComponent {
     this.bottomMargin = value;
   }
 
+  @Input('topMargin') set setTopMargin(value) {
+    this.topMargin = value;
+  }
+
   @HostBinding('class.field-bottom-margin')
   public bottomMargin = true;
+
+  @HostBinding('class.field-top-margin')
+  public topMargin = true;
 
   constructor() {
   }

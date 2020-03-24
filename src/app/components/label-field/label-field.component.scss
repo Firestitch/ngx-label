@@ -1,11 +1,19 @@
 :host {
 
   display: block;
-  min-height: 41px;
   position: relative;
 
+  &.field-top-margin {
+    .field-label {
+      height: 0.84375em;
+    }
+  }
+
   &.field-bottom-margin {
-    margin-bottom: 1.25em;
+    .field-wrap {
+      padding-bottom: 1.25em;
+    }
+
   }
 
   ::ng-deep fs-label {
@@ -18,15 +26,8 @@
 
 .field-message {
   font-size: 75%;
-  margin-top: 3px;
+  bottom: 0;
+  position: absolute;
   color: rgba(0, 0, 0, 0.54);
 }
 
-.field-content {
-  line-height: 20px;
-}
-
-.field-label {
-  padding-bottom: 5px;
-  height: 12px;
-}
