@@ -17,12 +17,16 @@ export class FsLabelFieldComponent {
     this.topMargin = value;
   }
 
+  @Input('labelMargin') set setLabelMargin(value) {
+    this.labelMargin = value;
+  }
+
   @HostBinding('class.field-bottom-margin')
   public bottomMargin = true;
 
   @HostBinding('class.field-top-margin')
   public topMargin = true;
 
-  constructor() {
-  }
+  @HostBinding('class.field-label-margin')
+  public labelMargin = true;
 }
