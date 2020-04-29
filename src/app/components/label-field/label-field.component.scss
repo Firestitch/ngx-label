@@ -17,9 +17,12 @@
 
   &.field-bottom-margin {
     .field-wrap {
-      padding-bottom: 1.25em;
-    }
 
+    }
+    .field-message {
+      min-height: 14px;
+      margin-top: 5px;
+    }
   }
 
   ::ng-deep fs-label {
@@ -36,8 +39,6 @@
 
 .field-message {
   font-size: 75%;
-  bottom: 0;
-  position: absolute;
   color: rgba(0, 0, 0, 0.54);
 }
 
