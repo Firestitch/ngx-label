@@ -3,6 +3,11 @@
   display: block;
   position: relative;
 
+  .field-label {
+    // IOS issue
+    overflow: hidden;
+  }
+
   &.field-top-margin {
     .field-label {
       height: 13px;
