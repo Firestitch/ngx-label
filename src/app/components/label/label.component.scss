@@ -4,6 +4,7 @@
   transition: none;
   display: flex;
   color: rgba(0,0,0,.54);
-  line-height: 16.875px;
-  transform: scale(0.75)  perspective(1em)  translateZ(0.00106px);
+  font-size: 75%;
+  transform: translateY(-.15em) translateZ(0.001px) perspective(100px);
+  height: 12px;
 }

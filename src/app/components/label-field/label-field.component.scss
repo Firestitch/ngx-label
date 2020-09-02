@@ -3,27 +3,13 @@
   display: block;
   position: relative;
 
-  .field-label {
-    // IOS issue
-    overflow: hidden;
-  }
-
-  &.field-top-margin {
-    .field-label {
-      height: 13px;
-    }
-  }
-
   &.field-label-margin {
     .field-label {
-      margin-bottom: 5px;
+      margin-bottom: 7px;
     }
   }
 
   &.field-bottom-margin {
-    .field-wrap {
-
-    }
     .field-message {
       min-height: 14px;
       margin-top: 5px;
