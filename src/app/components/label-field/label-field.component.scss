@@ -15,13 +15,6 @@
       margin-top: 5px;
     }
   }
-
-  ::ng-deep fs-label {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-  }
 }
 
 .field-label:empty {
