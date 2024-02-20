@@ -7,20 +7,18 @@ import { FsLabelMessageComponent } from './components/label-message/label-messag
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-  ],
-  exports: [
-    FsLabelComponent,
-    FsLabelFieldComponent,
-    FsLabelMessageComponent
-  ],
-  entryComponents: [
-  ],
-  declarations: [
-    FsLabelComponent,
-    FsLabelFieldComponent,
-    FsLabelMessageComponent
-  ]
+    imports: [
+        CommonModule,
+    ],
+    exports: [
+        FsLabelComponent,
+        FsLabelFieldComponent,
+        FsLabelMessageComponent
+    ],
+    declarations: [
+        FsLabelComponent,
+        FsLabelFieldComponent,
+        FsLabelMessageComponent
+    ]
 })
 export class FsLabelModule {}
