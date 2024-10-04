@@ -4,9 +4,10 @@
     Content
 </p>
 
-<div fxLayout="row wrap" fxLayoutAlign="flex-start flex-start" fxLayoutGap="25px">
+<div class="fs-row.wrap.gap-lg.align-start">
   <mat-form-field>
-    <input matInput placeholder="Material Form Input Field" value="value">
+    <mat-label>Material Form Input Field</mat-label>
+    <input matInput value="value">
     <mat-hint>Hint!</mat-hint>
   </mat-form-field>
 
@@ -14,9 +15,9 @@
     <fs-label>FsLabel Short Content</fs-label>
 
     <mat-form-field
-      class="form-field-padless"
-      floatLabel="never">
-      <input matInput placeholder="Padless Form Field">
+      class="form-field-padless">
+        <mat-label>Padless Form Field</mat-label>
+      <input matInput>
     </mat-form-field>
 
     <fs-label-message>
@@ -25,10 +26,10 @@
   </fs-label-field>
 
   <mat-form-field>
+    <mat-label>Select</mat-label>
     <mat-select
       [(ngModel)]="select"
-      name="select"
-      placeholder="Select">
+      name="select">
       <mat-option value="bob">
         Bob
       </mat-option>
@@ -48,7 +49,7 @@
 
   <fs-label-field>
     <fs-label>FsLabel Long Long Long Long Long Long Long Label</fs-label>
-    <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="start center" class="pills">
+    <div class="fs-row.wrap.gap-xs pills">
       <div class="pill">Pill A</div>
       <div class="pill">Pill B</div>
       <div class="pill">Pill C</div>
@@ -62,7 +63,7 @@
 
 <br><br><br>
 
-<div fxLayout="row" fxLayoutAlign="flex-start flex-start" fxLayoutGap="25px">
+<div class="fs-row.wrap.gap-lg.align-start">
   <fs-label-field [topMargin]="false">
     No top margin and label
     <fs-label-message>
