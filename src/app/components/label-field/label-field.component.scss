@@ -22,7 +22,7 @@
 }
 
 .field-message {
-  font-size: 75%;
+  font-size: var(--mat-form-field-subscript-text-size, var(--mat-app-body-small-size));
   color: rgba(0, 0, 0, 0.54);
 }
 
