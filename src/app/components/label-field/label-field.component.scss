@@ -25,7 +25,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 16px;
+    padding-top: 15px;
     box-sizing: border-box;
     margin-top: -11px;
   }
@@ -43,7 +43,6 @@
 
     &.focused {
       .field-wrap  {
-
         .outline-overlay {
           border-width: 2px;
         }
@@ -62,7 +61,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding: 16px;
+      padding: 15px 16px;
       box-sizing: border-box;
       margin-top: -11px;
 
