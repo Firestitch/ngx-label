@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+
+@mixin fs-label($theme) {
+  $primary: mat.m2-define-palette($theme);
+
+  fs-label-field.focused {
+    .outline-overlay {
+      border-color: mat.m2-get-color-from-palette($primary) !important;;
+    }
+  }
+}

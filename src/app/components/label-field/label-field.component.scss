@@ -1,5 +1,4 @@
 :host {
-
   display: block;
   position: relative;
 
@@ -15,11 +14,85 @@
       margin-top: 5px;
     }
   }
+
+  .field-label {
+    position: relative;
+    display: block;
+    top: -1px;
+  }
+
+  .field-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    box-sizing: border-box;
+    margin-top: -11px;
+  }
+
+  &.outline {
+    fs-label {
+      background: #fff;
+      top: -7px;
+      position: absolute;
+      left: 11px;
+      padding: 0 3px;
+      z-index: 5;
+      line-height: normal;
+    }
+
+    &.focused {
+      .field-wrap  {
+
+        .outline-overlay {
+          border-width: 2px;
+        }
+      }
+    }
+      
+    .field-label {
+      background: #fff;
+      padding: 0 6px;
+      margin: 0 10px;
+      z-index: 1;    
+      display: table;
+    }
+
+    .field-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      box-sizing: border-box;
+      margin-top: -11px;
+
+      .outline-overlay {      
+        border: 1px solid var(--mdc-outlined-text-field-outline-color);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-width: 1px;
+        border-radius: 5px;
+      }
+    }
+
+    &.hoverable:not(.focused):not(.disabled):hover {
+      .outline-overlay {
+        border-color: #212121 !important;
+      }
+    }
+  }
 }
 
-.field-label:empty {
-  display: none;
+
+.field-label {
+  &:empty {
+    display: none;
+  }
 }
+
 
 .field-message {
   font-size: var(--mat-form-field-subscript-text-size, var(--mat-app-body-small-size));

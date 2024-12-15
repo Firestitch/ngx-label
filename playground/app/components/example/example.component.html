@@ -1,68 +1,114 @@
-
 <p>
-    <fs-label>Standalong Label</fs-label>
-    Content
+  <fs-label>
+    Standalong Label
+  </fs-label>
+  Content
 </p>
-
 <div class="fs-row.wrap.gap-lg.align-start">
   <mat-form-field>
-    <mat-label>Material Form Input Field</mat-label>
-    <input matInput value="value">
-    <mat-hint>Hint!</mat-hint>
+    <mat-label>
+      Material Form Input Field
+    </mat-label>
+    <input
+      matInput
+      value="value">
+    <mat-hint>
+      Hint!
+    </mat-hint>
   </mat-form-field>
-
-  <fs-label-field [labelMargin]="false">
-    <fs-label>FsLabel Short Content</fs-label>
-
-    <mat-form-field
-      class="form-field-padless">
-        <mat-label>Padless Form Field</mat-label>
-      <input matInput>
-    </mat-form-field>
-
-    <fs-label-message>
-      Message area
-    </fs-label-message>
-  </fs-label-field>
-
-  <mat-form-field>
-    <mat-label>Select</mat-label>
+  <!-- <mat-form-field>
+    <mat-label>
+      Select
+    </mat-label>
     <mat-select
-      [(ngModel)]="select"
-      name="select">
+        [(ngModel)]="select"
+        name="select">
       <mat-option value="bob">
         Bob
       </mat-option>
       <mat-option value="sam">
         Sam
-    </mat-option>
+      </mat-option>
     </mat-select>
-  </mat-form-field>
-
+  </mat-form-field> -->
   <fs-label-field>
-    <fs-label>FsLabel Content</fs-label>
-    <div class="content-custom">Content </div>
-    <fs-label-message>
-      Message area
-    </fs-label-message>
-  </fs-label-field>
-
-  <fs-label-field>
-    <fs-label>FsLabel Long Long Long Long Long Long Long Label</fs-label>
-    <div class="fs-row.wrap.gap-xs pills">
-      <div class="pill">Pill A</div>
-      <div class="pill">Pill B</div>
-      <div class="pill">Pill C</div>
-      <div class="pill">Pill D</div>
+    <fs-label>
+      FsLabel Content
+    </fs-label>
+    <div class="content-custom">
+      Content
     </div>
     <fs-label-message>
       Message area
     </fs-label-message>
   </fs-label-field>
+  <fs-label-field>
+    <fs-label>
+      FsLabel Long Long Long Long Long Long Long Label
+    </fs-label>
+    <div class="fs-row.wrap.gap-xs pills">
+      <div class="pill">
+        Pill A
+      </div>
+      <div class="pill">
+        Pill B
+      </div>
+    </div>
+    <fs-label-message>
+      Message area
+    </fs-label-message>
+  </fs-label-field>
+  <fs-label-field [outline]="true">
+    <fs-label>
+      FsLabel Long Long Long Long Long Long Long Label
+    </fs-label>
+    <div class="fs-row.wrap.gap-xs pills">
+      <div class="pill">
+        Pill A
+      </div>
+      <div class="pill">
+        Pill B
+      </div>
+    </div>
+    <fs-label-message>
+      Message area
+    </fs-label-message>
+  </fs-label-field>
+  <fs-label-field [outline]="true">
+    <fs-label>
+      Label
+    </fs-label>
+    Text
+    <fs-label-message>
+      Message area
+    </fs-label-message>
+  </fs-label-field>
+  <fs-label-field
+      [hoverable]="true"
+      [outline]="true">
+    <fs-label>
+      Hoverable
+    </fs-label>
+    Text
+    <fs-label-message>
+      Message area
+    </fs-label-message>
+  </fs-label-field>
+  <fs-label-field
+      [focused]="true"
+      [outline]="true">
+    <fs-label>
+      Focused
+    </fs-label>
+    Text
+    <fs-label-message>
+      Message area
+    </fs-label-message>
+  </fs-label-field>
 </div>
-
-<br><br><br>
-
+<br>
+<br>
+<br>
 <div class="fs-row.wrap.gap-lg.align-start">
   <fs-label-field [topMargin]="false">
     No top margin and label
@@ -70,20 +116,20 @@
       Message area
     </fs-label-message>
   </fs-label-field>
-
   <fs-label-field [bottomMargin]="false">
-    <fs-label>Label</fs-label>
+    <fs-label>
+      Label
+    </fs-label>
     No bottom margin
   </fs-label-field>
 </div>
-
-
-
-<br><br><br>
-
-
+<br>
+<br>
+<br>
 <fs-label-field>
-  <fs-label>FsLabel Long Content</fs-label>
+  <fs-label>
+    FsLabel Long Content
+  </fs-label>
   Aliquam mollis vitae enim vitae posuere. Nam consectetur ex ut dignissim dapibus. Vestibulum pellentesque, nunc eget tincidunt semper, nibh lacus rutrum orci, at tincidunt elit dolor sit amet eros. Fusce porttitor enim non pharetra commodo. Etiam scelerisque pretium nunc vitae fringilla. Suspendisse potenti. Cras gravida mauris eu odio condimentum convallis.
   <fs-label-message>
     Aliquam mollis vitae enim vitae posuere. Nam consectetur ex ut dignissim dapibus. Vestibulum pellentesque, nunc eget tincidunt semper, nibh lacus rutrum orci, at tincidunt elit dolor sit amet eros. Fusce porttitor enim non pharetra commodo. Etiam scelerisque pretium nunc vitae fringilla. Suspendisse potenti. Cras gravida mauris eu odio condimentum convallis.
