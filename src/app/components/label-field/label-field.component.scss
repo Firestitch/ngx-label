@@ -19,6 +19,10 @@
     position: relative;
     display: block;
     top: -1px;
+
+    &:empty {
+      visibility: hidden;
+    }
   }
 
   .field-wrap {
@@ -32,7 +36,6 @@
 
   &.outline {
     fs-label {
-      background: #fff;
       top: -7px;
       position: absolute;
       left: 11px;
@@ -84,14 +87,6 @@
     }
   }
 }
-
-
-.field-label {
-  &:empty {
-    display: none;
-  }
-}
-
 
 .field-message {
   font-size: var(--mat-form-field-subscript-text-size, var(--mat-app-body-small-size));
