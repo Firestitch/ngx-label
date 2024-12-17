@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy, Component, HostBinding, Input, ViewEncapsulation,
+} from '@angular/core';
 
 
 @Component({
@@ -6,6 +8,7 @@ import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular
   templateUrl: './label-field.component.html',
   styleUrls: ['./label-field.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
 export class FsLabelFieldComponent {
   
