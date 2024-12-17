@@ -12,9 +12,15 @@ import {
 })
 export class FsLabelFieldComponent {
   
-  @Input('outline') 
-  @HostBinding('class.outline')
-  public outline = false;
+  @Input('appearance') 
+  public set setAppearance(appearance: 'basic' | 'outline') {
+    this.outlineAppearance = appearance === 'outline';
+    this.basicAppearance = appearance === 'basic';
+  }
+  
+  @Input('showOutline') 
+  @HostBinding('class.show-outline')
+  public showOutline = true;
   
   @Input('disabled') 
   @HostBinding('class.disabled')
@@ -40,4 +46,9 @@ export class FsLabelFieldComponent {
   @HostBinding('class.field-label-margin')
   public labelMargin = true;
 
+  @HostBinding('class.appearance-outline')
+  public outlineAppearance = false;
+  
+  @HostBinding('class.appearance-basic')
+  public basicAppearance = true;
 }

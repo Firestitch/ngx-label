@@ -29,7 +29,7 @@ fs-label-field {
     }
   }
 
-  &.outline {
+  &.appearance-outline {
     &.focused {
       .field-wrap  {
         .outline-overlay {
@@ -61,6 +61,12 @@ fs-label-field {
         top: 0;
         border-width: 1px;
         border-radius: 5px;
+      }
+    }
+
+    &:not(.show-outline) {
+      .outline-overlay {
+        display: none;
       }
     }
 

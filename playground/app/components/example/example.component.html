@@ -16,21 +16,6 @@
       Hint!
     </mat-hint>
   </mat-form-field>
-  <!-- <mat-form-field>
-    <mat-label>
-      Select
-    </mat-label>
-    <mat-select
-        [(ngModel)]="select"
-        name="select">
-      <mat-option value="bob">
-        Bob
-      </mat-option>
-      <mat-option value="sam">
-        Sam
-      </mat-option>
-    </mat-select>
-  </mat-form-field> -->
   <fs-label-field>
     <fs-label>
       FsLabel Content
@@ -58,7 +43,7 @@
       Message area
     </fs-label-message>
   </fs-label-field>
-  <fs-label-field [outline]="true">
+  <fs-label-field [appearance]="'outline'">
     <fs-label>
       FsLabel Long Long Long Long Long Long Long Label
     </fs-label>
@@ -74,7 +59,7 @@
       Message area
     </fs-label-message>
   </fs-label-field>
-  <fs-label-field [outline]="true">
+  <fs-label-field [appearance]="'outline'">
     <fs-label>
       Label
     </fs-label>
@@ -85,7 +70,7 @@
   </fs-label-field>
   <fs-label-field
       [hoverable]="true"
-      [outline]="true">
+      [appearance]="'outline'">
     <fs-label>
       Hoverable
     </fs-label>
@@ -96,7 +81,7 @@
   </fs-label-field>
   <fs-label-field
       [focused]="true"
-      [outline]="true">
+      [appearance]="'outline'">
     <fs-label>
       Focused
     </fs-label>
@@ -107,7 +92,7 @@
   </fs-label-field>
   <fs-label-field
       [focused]="true"
-      [outline]="true">
+      [appearance]="'outline'">
     Text
     <fs-label-message>
       Message area
