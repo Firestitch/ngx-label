@@ -2,23 +2,14 @@
   display: block;
   position: relative;
 
-  &.field-label-margin {
-    .field-label {
-      min-height: 16px;
-    }
-  }
-
-  &.field-bottom-margin {
-    .field-message {
-      min-height: 14px;
-      margin-top: 5px;
-    }
-  }
-
   .field-label {
+    z-index: 1;
     position: relative;
-    display: block;
-    top: -1px;
+    top: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -9px;
+    height: 14px;
 
     &:empty {
       visibility: hidden;
@@ -31,18 +22,9 @@
     align-items: center;
     padding-top: 15px;
     box-sizing: border-box;
-    margin-top: -11px;
   }
 
   &.outline {
-    fs-label {
-      top: -7px;
-      position: absolute;
-      left: 11px;
-      padding: 0 3px;
-      z-index: 5;
-      line-height: normal;
-    }
 
     &.focused {
       .field-wrap  {
@@ -53,21 +35,17 @@
     }
       
     .field-label {
-      background: #fff;
-      padding: 0 6px;
-      margin: 0 10px;
-      z-index: 1;    
-      display: table;
-      line-height: normal;
+      padding: 0 10px;
+
+      ::ng-deep fs-label { 
+        background: #fff;
+        padding: 0 6px;
+        display: table;
+      }
     }
 
     .field-wrap {
-      position: relative;
-      display: flex;
-      align-items: center;
       padding: 15px 16px;
-      box-sizing: border-box;
-      margin-top: -11px;
 
       .outline-overlay {      
         border: 1px solid var(--mdc-outlined-text-field-outline-color);
