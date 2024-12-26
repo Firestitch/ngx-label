@@ -3,13 +3,7 @@ fs-label-field {
   position: relative;
 
   .field-label {
-    z-index: 1;
-    position: relative;
-    top: 8px;
     width: 100%;
-    box-sizing: border-box;
-    margin-top: -9px;
-    height: 14px;
     line-height: normal;
 
     &:empty {
@@ -30,6 +24,8 @@ fs-label-field {
   }
 
   &.appearance-outline {
+    margin-top: 5px;
+
     &.focused {
       .field-wrap  {
         .outline-overlay {
@@ -40,6 +36,10 @@ fs-label-field {
       
     .field-label {
       padding: 0 10px;
+      top: -6px;
+      height: 0;
+      z-index: 1;
+      position: relative;
 
       fs-label { 
         background: #fff;
