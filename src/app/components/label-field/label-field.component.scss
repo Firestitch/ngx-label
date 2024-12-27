@@ -23,6 +23,19 @@ fs-label-field {
     }
   }
 
+  .field-message {
+    font-size: var(--mat-form-field-subscript-text-size, var(--mat-app-body-small-size));
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  &:not(.padless) {
+    .field-message {
+      padding-top: 3px;
+      line-height: normal;
+      min-height: 22px;
+    }
+  }
+
   &.appearance-outline {
     margin-top: 5px;
 
@@ -77,9 +90,3 @@ fs-label-field {
     }
   }
 }
-
-.field-message {
-  font-size: var(--mat-form-field-subscript-text-size, var(--mat-app-body-small-size));
-  color: rgba(0, 0, 0, 0.54);
-}
-

@@ -34,17 +34,9 @@ export class FsLabelFieldComponent {
   @HostBinding('class.hoverable')
   public hoverable = false;
 
-  @Input('bottomMargin') 
-  @HostBinding('class.field-bottom-margin')
-  public bottomMargin = true;
-
-  @Input('topMargin') 
-  @HostBinding('class.field-top-margin')
-  public topMargin = true;
-
-  @Input('labelMargin') 
-  @HostBinding('class.field-label-margin')
-  public labelMargin = true;
+  @Input('padless') 
+  @HostBinding('class.padless')
+  public padless = false;
 
   @HostBinding('class.appearance-outline')
   public outlineAppearance = false;
