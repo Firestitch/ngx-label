@@ -53,6 +53,7 @@ fs-label-field {
       height: 0;
       z-index: 1;
       position: relative;
+      box-sizing: border-box;
 
       fs-label { 
         background: #fff;
