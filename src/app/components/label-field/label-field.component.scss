@@ -58,7 +58,14 @@ fs-label-field {
       fs-label { 
         background: #fff;
         padding: 0 6px;
-        display: table;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        /* width: 100%; */
+        text-overflow: ellipsis;
+        box-sizing: border-box;
+        max-width: 100%;
+        width: fit-content;
       }
     }
 

@@ -22,7 +22,7 @@ export class FsLabelFieldComponent {
   @HostBinding('class.show-outline')
   public showOutline = true;
   
-  @Input('disabled') 
+  @Input('disabled')  
   @HostBinding('class.disabled')
   public disabled = false;
   
