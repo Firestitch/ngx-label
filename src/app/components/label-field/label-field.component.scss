@@ -20,6 +20,7 @@ fs-label-field {
 
     .field-content {
       flex: 1;
+      min-width: 0;
     }
   }
 
@@ -61,7 +62,6 @@ fs-label-field {
         display: block;
         white-space: nowrap;
         overflow: hidden;
-        /* width: 100%; */
         text-overflow: ellipsis;
         box-sizing: border-box;
         max-width: 100%;
