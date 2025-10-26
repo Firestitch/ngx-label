@@ -4,11 +4,12 @@ import {
 
 
 @Component({
-  selector: 'fs-label-field',
-  templateUrl: './label-field.component.html',
-  styleUrls: ['./label-field.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None,
+    selector: 'fs-label-field',
+    templateUrl: './label-field.component.html',
+    styleUrls: ['./label-field.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None,
+    standalone: true,
 })
 export class FsLabelFieldComponent {
   
