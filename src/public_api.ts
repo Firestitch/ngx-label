@@ -3,6 +3,7 @@
  */
 
 
+export { FsLabelModule } from './app/fs-label.module';
 
 // Components
 export { FsLabelComponent } from './app/components/label/label.component';
