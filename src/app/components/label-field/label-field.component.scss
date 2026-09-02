@@ -1,4 +1,12 @@
 fs-label-field {
+  // Separation held below every field. This is the whole gap when there is no
+  // message; when there is one, the message sits on top of it and the gap is
+  // still held below, so stacked fields keep the same rhythm regardless of how
+  // far a message wraps.
+  --fs-label-field-message-gap: 24px;
+  // Space between the field content and the first line of the message.
+  --fs-label-field-message-spacing: 3px;
+
   display: block;
   position: relative;
 
@@ -31,9 +39,15 @@ fs-label-field {
 
   &:not(.padless) {
     .field-message {
-      padding-top: 3px;
       line-height: normal;
-      min-height: 22px;
+      // The gap is held below the message rather than around it, so message
+      // text adds to the field height instead of eating into the separation.
+      // An empty message area collapses to the gap on its own.
+      padding-bottom: var(--fs-label-field-message-gap);
+
+      &:has(> *) {
+        padding-top: var(--fs-label-field-message-spacing);
+      }
     }
   }
 

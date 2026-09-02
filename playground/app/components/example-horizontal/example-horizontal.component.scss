@@ -1,0 +1,15 @@
+.note {
+  max-width: 700px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.horizontal-field {
+  width: 240px;
+  background-color: #FAFAFA;
+}
+
+.value {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

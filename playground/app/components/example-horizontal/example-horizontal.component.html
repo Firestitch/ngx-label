@@ -1,0 +1,92 @@
+<p class="note">
+  Fields laid out side by side. Each column holds a message of a different
+  length — the gap below every message is the same, so the fields keep a
+  consistent baseline no matter how far the message wraps.
+</p>
+
+<div class="fs-row.wrap.gap-md.align-start">
+  <fs-label-field class="horizontal-field">
+    <fs-label>
+      No message
+    </fs-label>
+    <div class="value">
+      $100.00
+    </div>
+  </fs-label-field>
+
+  <fs-label-field class="horizontal-field">
+    <fs-label>
+      One line
+    </fs-label>
+    <div class="value">
+      $50.00
+    </div>
+    <fs-label-message>
+      A single line of message text.
+    </fs-label-message>
+  </fs-label-field>
+
+  <fs-label-field class="horizontal-field">
+    <fs-label>
+      Two lines
+    </fs-label>
+    <div class="value">
+      50% on first subscription orders
+    </div>
+    <fs-label-message>
+      One of the offer's rules — this is the one that paid. An issued offer
+      cannot be edited, so it still reads as it did on the day.
+    </fs-label-message>
+  </fs-label-field>
+
+  <fs-label-field class="horizontal-field">
+    <fs-label>
+      Many lines
+    </fs-label>
+    <div class="value">
+      Aug 29, 2026 9:13 am
+    </div>
+    <fs-label-message>
+      Aliquam mollis vitae enim vitae posuere. Nam consectetur ex ut dignissim
+      dapibus. Vestibulum pellentesque, nunc eget tincidunt semper, nibh lacus
+      rutrum orci, at tincidunt elit dolor sit amet eros.
+    </fs-label-message>
+  </fs-label-field>
+</div>
+
+<h4>Outline appearance</h4>
+
+<div class="fs-row.wrap.gap-md.align-start">
+  <fs-label-field
+      class="horizontal-field"
+      [appearance]="'outline'">
+    <fs-label>
+      No message
+    </fs-label>
+    Text
+  </fs-label-field>
+
+  <fs-label-field
+      class="horizontal-field"
+      [appearance]="'outline'">
+    <fs-label>
+      One line
+    </fs-label>
+    Text
+    <fs-label-message>
+      A single line of message text.
+    </fs-label-message>
+  </fs-label-field>
+
+  <fs-label-field
+      class="horizontal-field"
+      [appearance]="'outline'">
+    <fs-label>
+      Two lines
+    </fs-label>
+    Text
+    <fs-label-message>
+      A message long enough that it wraps onto a second line below the field.
+    </fs-label-message>
+  </fs-label-field>
+</div>
