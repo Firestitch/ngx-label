@@ -3,7 +3,10 @@ fs-label {
   transform-origin: 0 0;
   transition: none;
   display: flex;
-  color: rgba(0,0,0,.54);
+  // Was a flat rgba(0,0,0,.54) — black at 54%, which is invisible on a dark
+  // ground. light-dark() picks off the `color-scheme` the host app declares, so
+  // the label is legible in both worlds with no input, class or media query.
+  color: var(--fs-color-text-muted, light-dark(rgba(0, 0, 0, 0.54), #97A5A6));
   font-size: 75%;
   min-height: 12px;
 }
