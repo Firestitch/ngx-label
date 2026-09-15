@@ -74,7 +74,7 @@ fs-label-field {
         // The floating label sits ON the outline, so it needs the SURFACE
         // colour behind it to punch a gap in the border. Hardcoded #fff put a
         // white slab through a dark field.
-        background: var(--fs-color-surface, light-dark(#FFFFFF, #232428));
+        background: var(--fs-surface-background, light-dark(#FFFFFF, #232428));
         padding: 0 6px;
         display: block;
         white-space: nowrap;
