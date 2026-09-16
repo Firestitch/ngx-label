@@ -34,7 +34,7 @@ fs-label-field {
 
   .field-message {
     font-size: var(--mat-form-field-subscript-text-size, var(--mat-app-body-small-size));
-    color: var(--fs-color-text-muted, light-dark(rgba(0, 0, 0, 0.54), #97A5A6));
+    color: var(--fs-color-text-muted, rgba(0, 0, 0, 0.54));
   }
 
   &:not(.padless) {
@@ -74,7 +74,7 @@ fs-label-field {
         // The floating label sits ON the outline, so it needs the SURFACE
         // colour behind it to punch a gap in the border. Hardcoded #fff put a
         // white slab through a dark field.
-        background: var(--fs-surface-background, light-dark(#FFFFFF, #232428));
+        background: var(--fs-surface-background, #FFFFFF);
         padding: 0 6px;
         display: block;
         white-space: nowrap;
@@ -110,11 +110,12 @@ fs-label-field {
 
     &.hoverable:not(.focused):not(.disabled):hover {
       .outline-overlay {
-        // #212121 is KEPT EXACTLY as the light value — this pass adds a dark
-        // counterpart, it does not restyle light mode. Near-black is the right
-        // hover emphasis on a white field and invisible on a dark one, so the
-        // dark side mirrors it as near-white at the same strength.
-        border-color: light-dark(#212121, rgba(255, 255, 255, 0.87)) !important;
+        // Near-black is the right hover emphasis on a white field and
+        // invisible on a dark one, so this reads --fs-color-text, which already
+        // means "the ink that shows on this scheme's ground" and flips with it.
+        // #212121 is KEPT EXACTLY as the light fallback, so light mode is
+        // unchanged for a host without @firestitch/style.
+        border-color: var(--fs-color-text, #212121) !important;
       }
     }
   }
